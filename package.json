@@ -1,0 +1,27 @@
+{
+  "name": "logocreater",
+  "version": "1.0.0",
+  "description": "Creating a simple SVG LOGO with JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mahdi-Moradzadeh/logoCreater.git"
+  },
+  "keywords": [
+    "LOGO",
+    "SVG",
+    "Shapes"
+  ],
+  "author": "Mahdi Moradzadeh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mahdi-Moradzadeh/logoCreater/issues"
+  },
+  "homepage": "https://github.com/Mahdi-Moradzadeh/logoCreater#readme",
+  "dependencies": {
+    "inquirer": "^9.2.6"
+  }
+}
