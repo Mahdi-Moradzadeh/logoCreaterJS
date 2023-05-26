@@ -22,6 +22,9 @@
   },
   "homepage": "https://github.com/Mahdi-Moradzadeh/logoCreater#readme",
   "dependencies": {
-    "inquirer": "^9.2.6"
+    "inquirer": "8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
   }
 }
