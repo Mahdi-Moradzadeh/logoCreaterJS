@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const shape = require('./lib/shapes.js');
+const Shape = require('./lib/shapes.js');
+
 
 function promptUser() {
     inquirer.prompt([
@@ -27,9 +28,19 @@ function promptUser() {
         },
     ])
     .then((answers) => {
-        const newShape = new shape(answers.text, answers.textColour, answers.colour, answers.shape);
-        const svg = newShape.logoCreater(answers.text, answers.textColour, answers.colour, answers.shape, newShape.width, newShape.height);
-        writetoFile(`logo.svg`,svg);
+        if (answers.shape === 'circle'){
+            const newCircle = new Shape.circle(answers.text, answers.textColour, answers.colour);
+            writetoFile('logo.svg', newCircle.logoCreater(answers.text, answers.textColour, answers.colour));
+        }
+        else if (answers.shape === 'triangle'){
+            const newTriangle = new Shape.triangle(answers.text, answers.textColour, answers.colour);
+            writetoFile('logo.svg', newTriangle.logoCreater(answers.text, answers.textColour, answers.colour));
+        }
+        else if (answers.shape === 'square'){
+            const newSquare = new Shape.square(answers.text, answers.textColour, answers.colour);
+            writetoFile('logo.svg', newSquare.logoCreater(answers.text, answers.textColour, answers.colour));
+        }
+
     });
 }
 

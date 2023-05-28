@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Creating a simple SVG LOGO with JS",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts" : { 
+    "test" : "jest" 
+ },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mahdi-Moradzadeh/logoCreater.git"
@@ -25,6 +25,6 @@
     "inquirer": "8.2.4"
   },
   "devDependencies": {
-    "jest": "^29.5.0"
+    "jest": "^24.9.0"
   }
 }
